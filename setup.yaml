@@ -1,0 +1,21 @@
+- target: europe
+  modules:
+    - name: authentication
+  setups:
+    - name: full
+      modules:
+        - name: client
+          type: feature
+    - name: demo
+      modules:
+        - name: client
+          type: feature
+        - name: seq
+          type: logging
+          
+- target: asia
+  setups:
+    - name: full
+      modules:
+        - name: client
+          type: feature
